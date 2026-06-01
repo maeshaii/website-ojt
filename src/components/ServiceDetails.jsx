@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 import { servicesData } from "../data/services";
 
-import "../components/Css/serviceDetails.css";
+import "../components/Css/ServiceDetails.css";
 
 export default function ServiceDetails() {
   const { slug } = useParams();
