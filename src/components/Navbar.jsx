@@ -29,7 +29,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <a href="mailto:support@411socials.com" className="nav-link">
+            <a href="mailto:melany.rediske@411socials.space" className="nav-link">
               Contact Us
             </a>
           </li>
