@@ -29,7 +29,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <a href="/#footer" className="nav-link">
+            <a href="mailto:support@411socials.com" className="nav-link">
               Contact Us
             </a>
           </li>
