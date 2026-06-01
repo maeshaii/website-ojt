@@ -28,11 +28,14 @@ export default function Navbar() {
             </a>
           </li>
 
-          <li>
-            <a href="mailto:melany.rediske@411socials.space" className="nav-link">
-              Contact Us
-            </a>
-          </li>
+        <li>
+          <a
+            href="mailto:melany.rediske@411socials.space,n.rediske@writersnestenterprise.com?subject=Inquiry from 411 Socials Website"
+            className="nav-link"
+          >
+            Contact Us
+          </a>
+        </li>
         </ul>
 
       </div>
