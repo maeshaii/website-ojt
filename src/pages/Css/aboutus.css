@@ -1,0 +1,448 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.aboutus-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f7f2ff 45%,
+      #f4ecff 100%
+    );
+
+  padding: 7rem 8%;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   BACKGROUND GLOW
+========================= */
+
+.about-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.about-glow-1 {
+  top: -120px;
+  right: -100px;
+
+  width: 350px;
+  height: 350px;
+
+  background: rgba(127, 0, 255, 0.15);
+}
+
+.about-glow-2 {
+  bottom: -120px;
+  left: -100px;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(168, 85, 247, 0.12);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.aboutus-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1400px;
+  width: 100%;
+
+  margin: auto;
+
+  display: grid;
+
+  /* BALANCED LAYOUT */
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5rem;
+
+  align-items: center;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.aboutus-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 650px;
+}
+
+.aboutus-badge {
+  width: fit-content;
+
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1.8rem;
+
+  border-radius: 999px;
+
+  background: rgba(127, 0, 255, 0.08);
+
+  border: 1px solid rgba(127, 0, 255, 0.12);
+
+  color: #7f00ff;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.aboutus-title {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 1.08;
+  font-weight: 800;
+
+  color: #111827;
+
+  margin-bottom: 1.5rem;
+}
+
+.aboutus-title span {
+  background: linear-gradient(
+    135deg,
+    #7f00ff,
+    #a855f7
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutus-description {
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  color: #4b5563;
+
+  margin-bottom: 2.7rem;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  margin-bottom: 2.8rem;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 1.2rem;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid rgba(127, 0, 255, 0.08);
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(12px);
+
+  color: #1f2937;
+  font-weight: 600;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateX(8px);
+
+  border-color: rgba(127, 0, 255, 0.25);
+
+  box-shadow:
+    0 12px 35px rgba(127, 0, 255, 0.08);
+}
+
+.feature-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #7f00ff,
+    #c084fc
+  );
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.aboutus-button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 1rem 1.7rem;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #7f00ff,
+    #a855f7
+  );
+
+  color: white;
+  text-decoration: none;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 12px 30px rgba(127, 0, 255, 0.25);
+
+  transition: all 0.35s ease;
+}
+
+.aboutus-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 16px 40px rgba(127, 0, 255, 0.35);
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.aboutus-right {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  width: 100%;
+  max-width: 560px;
+
+  margin-left: auto;
+
+  gap: 1rem; /* REDUCED */
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stat-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.35s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 50px rgba(127, 0, 255, 0.1);
+}
+
+/* FEATURED CARD */
+
+.stat-card.featured {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+
+  padding: 2.5rem;
+
+  min-height: 190px;
+}
+
+/* GRID */
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1.7rem;
+}
+
+/* SMALL CARDS */
+
+.stat-card.small {
+  padding: 2.2rem 1.5rem;
+
+  min-height: 220px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ICON */
+
+.stat-icon {
+  width: 78px;
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #7f00ff,
+    #a855f7
+  );
+
+  color: white;
+  font-size: 1.8rem;
+
+  box-shadow:
+    0 10px 25px rgba(127, 0, 255, 0.25);
+}
+
+/* TEXT */
+
+.stat-card h3 {
+  font-size: 2.6rem;
+  font-weight: 800;
+
+  color: #111827;
+
+  margin: 1rem 0 0.3rem;
+}
+
+.stat-card p {
+  color: #6b7280;
+
+  font-weight: 500;
+
+  font-size: 1rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .aboutus-container {
+    grid-template-columns: 1fr;
+
+    gap: 4rem;
+  }
+
+  .aboutus-left,
+  .aboutus-right {
+    max-width: 100%;
+  }
+
+  .aboutus-right {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-section {
+    padding: 5rem 6%;
+  }
+
+  .aboutus-left {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .aboutus-description {
+    text-align: center;
+  }
+
+  .about-features {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card.featured {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-title {
+    font-size: 2.3rem;
+  }
+
+  .aboutus-description {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .feature-card {
+    font-size: 0.92rem;
+  }
+
+  .aboutus-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .stat-card.small,
+  .stat-card.featured {
+    min-height: auto;
+  }
+}

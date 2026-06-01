@@ -1,0 +1,76 @@
+.footer {
+  background: linear-gradient(135deg, #533bb1, #2C2A7D, #111827); /* elegant purple → navy gradient */
+  color: #fff;
+  padding: 4rem 1.5rem 2rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 -2px 15px rgba(0,0,0,0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-description {
+  opacity: 0.85;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #FFD700; /* subtle gold on hover */
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #FFD700;
+  color: #500000;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}

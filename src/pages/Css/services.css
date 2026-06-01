@@ -1,0 +1,168 @@
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-header h2 {
+  font-size: 2.5rem; 
+  color: #6b21a8;
+  margin-bottom: 0.5rem;
+}
+
+.services-header .subtitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.services-header .description {
+  font-size: 1rem;
+  color: #6b6375;
+  margin-top: 0.25rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* slightly lift the card */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* deeper shadow on hover */
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 5px;
+  background-color: #6b21a8;
+  border-radius: 4px;
+}
+
+.service-card.image-left .service-image {
+  order: 1;
+}
+
+.service-card.image-left .service-info {
+  order: 2;
+}
+
+.service-card.image-right .service-image {
+  order: 2;
+}
+
+.service-card.image-right .service-info {
+  order: 1;
+}
+
+.service-image img,
+.placeholder-image {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #f3f3f3;
+}
+
+.placeholder-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-info {
+  flex: 1;
+  padding: 2rem;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #6b21a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.service-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+  display: flex;
+  align-items: center;
+}
+
+.service-number {
+  color: #6b21a8;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.service-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #6b6375;
+}
+
+.view-all {
+  font-weight: 600;
+  color: #6b21a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-all:hover {
+  color: #9d4edd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-card::after {
+    display: none;
+  }
+
+  .service-image img,
+  .placeholder-image {
+    max-width: 100%;
+  }
+}
+.service-link {
+  text-decoration: none;
+
+  color: inherit;
+
+  display: block;
+}
