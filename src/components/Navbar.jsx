@@ -28,7 +28,11 @@ export default function Navbar() {
             </a>
           </li>
 
-          <li><Link to="/contact" className="nav-link">Contact Us</Link></li>
+          <li>
+            <a href="/#footer" className="nav-link">
+              Contact Us
+            </a>
+          </li>
         </ul>
 
       </div>
